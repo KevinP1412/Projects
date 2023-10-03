@@ -1,0 +1,8 @@
+<h3 style="color: rgb(190, 45, 147);">{{message}}</h3>
+ 
+<ol>
+    <li *ngFor="let city of cities">
+{{city}}
+    </li>
+</ol>
+<button (click)="OnClick()">send message to parent</button>

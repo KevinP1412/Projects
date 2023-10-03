@@ -1,0 +1,7 @@
+<app-child  [message]="massageToChild" (parentMessage)="captureData($event)"  [cities]="citiesArr"></app-child>
+
+<h2>{{messageFromChild}}</h2>
+
+ <h1>{{message}}</h1> 
+ <h1 #heading>Welcome to Angular</h1>
+
