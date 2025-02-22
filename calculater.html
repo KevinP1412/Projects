@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculaterstyle.css">
+</head>
+
+<body>
+    <div class="mdiv">
+        <div class="calculaterdiv" align="center">
+            <div>
+                <input type="text" name="op" id="op" disabled>
+            </div>
+            <div>
+                <input type="button" name="operator" value="AC" onclick="document.getElementsByName('op')[0].value=''" class="operator1">
+                <input type="button" name="operator" value="C" onclick="document.getElementsByName('op')[0].value=document.getElementsByName('op')[0].value.slice(0, -1)" class="operator1">
+                <input type="button" name="operator" value="%" onclick="document.getElementsByName('op')[0].value+='%' " class="operator1">
+                <input type="button" name="operator" value="÷" onclick="document.getElementsByName('op')[0].value+='/'" class="operator">
+            </div>
+            <div>
+                <input type="button" name="operator" value="7" onclick="document.getElementsByName('op')[0].value+='7'" class="num">
+                <input type="button" name="operator" value="8" onclick="document.getElementsByName('op')[0].value+='8'" class="num">
+                <input type="button" name="operator" value="9" onclick="document.getElementsByName('op')[0].value+='9'" class="num">
+                <input type="button" name="operator" value="x" onclick="document.getElementsByName('op')[0].value+='*'" class="operator">
+            </div>
+            <div>
+                <input type="button" name="operator" value="4" onclick="document.getElementsByName('op')[0].value+='4'" class="num">
+                <input type="button" name="operator" value="5" onclick="document.getElementsByName('op')[0].value+='5'" class="num">
+                <input type="button" name="operator" value="6" onclick="document.getElementsByName('op')[0].value+='6'" class="num">
+                <input type="button" name="operator" value="-" onclick="document.getElementsByName('op')[0].value+='-'" class="operator">
+            </div>
+            <div>
+                <input type="button" name="operator" value="1" onclick="document.getElementsByName('op')[0].value+='1'" class="num">
+                <input type="button" name="operator" value="2" onclick="document.getElementsByName('op')[0].value+='2'" class="num">
+                <input type="button" name="operator" value="3" onclick="document.getElementsByName('op')[0].value+='3'" class="num">
+                <input type="button" name="operator" value="+" onclick="document.getElementsByName('op')[0].value+='+'" class="operator">
+            </div>
+            <div>
+                <input type="button" name="operator" value="0" onclick="document.getElementsByName('op')[0].value+='0'" class="num zero">
+                <input type="button" name="operator" value="." onclick="document.getElementsByName('op')[0].value+='.'" class="num">
+                <input type="button" name="operator" value="=" onclick="document.getElementsByName('op')[0].value=eval(document.getElementsByName('op')[0].value)" class="operator">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

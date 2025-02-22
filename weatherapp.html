@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="weatherappStyle.css">
+</head>
+<body>
+    <div class="main1">
+        <div class="weatherapp" align="center">
+            <div class="header">
+                <h1>WEATHER FORECAST</h1>
+            </div>
+            <form>
+                <input type="text" id="cityname" name="cname" placeholder="Enter City Name" size="27" autofocus>
+                <input type="button" name="submit" value="Fetch" class="fetchButton" onclick="fetchcityName()">
+            </form>
+            <div style="margin-top: 30px;" align="center" class="subdiv">
+                <img src="weather.png" style="height: 120px; width: 120px;">
+                <div>
+                    <h3 id="city1">Undefined</h3>
+                    <div>
+                        <img src="thermometer.png" style="height: 20px; width: 20px; margin-top: 10px;">
+                        <h3 id="temp">Temp : 0°C</h3>
+                    </div>
+                    <div>
+                        <img src="humidity.png" style="height: 20px; width: 20px; margin-top: 10px;">
+                        <h3 id="humidity">Humidity : 0%</h3>
+                    </div>
+                    <div>
+                        <img src="wind.png" style="height: 20px; width: 20px; margin-top: 10px;">
+                        <h3 id="wind">Wind Speed : 0 km/h</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="weatherapp.js"></script>
+</body>
+
+</html>
